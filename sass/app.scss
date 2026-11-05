@@ -6,3 +6,88 @@
 @use "./pages/pages";
 @use "./themes/themes";
 @use "settings";
+
+$color-primario: #515def;
+$color-secundario: #1bcff6;
+$tamano-t-nav: 18px;
+$espaciado: 20px;
+.logo {
+  position: relative;
+  width: 92px;
+  height: 54px;
+  margin: 30px 20px 30px 20px;
+}
+.nav {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  font-size: $tamano-t-nav;
+}
+.nav > ul {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 50%;
+  height: 60px;
+  background: $color-primario;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      height: 60px;
+      text-decoration: none;
+      color: #fbfbfb;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: $tamano-t-nav;
+      line-height: 27px;
+    }
+  }
+}
+.button {
+  position: relative;
+  background: $color-primario;
+  border: 1px solid $color-primario;
+  text-align: center;
+  margin: 0;
+  padding-top: 15px;
+  text-justify: center;
+  border-radius: 5px;
+}
+.texto1 {
+  position: absolute;
+  right: 10%;
+  top: 16.5px;
+  width: 149px;
+  height: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  white-space: nowrap;
+}
+.button a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  white-space: nowrap;
+  color: #fbfbfb;
+}

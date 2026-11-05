@@ -33,9 +33,9 @@ body {
   list-style: none;
   gap: 20px;
   padding: 0;
-  margin: 0;
+  padding-left: 160px;
   position: relative;
-  width: 50%;
+  width: 58%;
   height: 60px;
   background: #515def;
 }
@@ -44,7 +44,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 100%;
+  width: 58%;
   height: 60px;
 }
 .nav > ul li a {
@@ -87,7 +87,7 @@ body {
   white-space: nowrap;
 }
 
-.button a {
+.nav .button a {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   text-decoration: none;
@@ -96,6 +96,88 @@ body {
   line-height: 27px;
   white-space: nowrap;
   color: #fbfbfb;
+}
+
+.hero__content {
+  position: relative;
+  width: 58%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #515def;
+}
+
+.fondo {
+  background-image: url("../img/smiling-creative-business-team.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  background-size: 50% 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+header section.hero__content {
+  width: 58%;
+  height: 100%;
+  padding-left: 160px;
+  padding-top: 80px;
+  padding-right: 88px;
+  padding-bottom: 81px;
+}
+
+h1.hero__title {
+  position: relative;
+  font-size: 24px;
+  color: #fbfbfb;
+}
+
+p.hero__text {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  text-transform: initial;
+  line-height: 80px;
+  white-space: wrap;
+  color: #fbfbfb;
+  margin: 15px 0px 15px 0px;
+}
+
+p.hero__text2 {
+  font-size: 24px;
+  color: #fbfbfb;
+  white-space: wrap;
+  max-width: 784px;
+  margin-bottom: 54px;
+}
+
+div.content__bottom {
+  width: 299px;
+  height: 88px;
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.buttom2 {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-size: 24px;
+  font-style: normal;
+  color: #333333;
+  background-image: url("../img/Arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+  background-position: 190px center;
+  padding-right: 50px;
 }
 
 /*# sourceMappingURL=app.css.map */

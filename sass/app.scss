@@ -7,8 +7,10 @@
 @use "./themes/themes";
 @use "settings";
 
+$tipo-letra: "Poppins", sans-serif;
 $color-primario: #515def;
-$color-secundario: #1bcff6;
+$color-secundario: #fbfbfb;
+$color-ter: #333333;
 $tamano-t-nav: 18px;
 $espaciado: 20px;
 .logo {
@@ -30,9 +32,9 @@ $espaciado: 20px;
   list-style: none;
   gap: 20px;
   padding: 0;
-  margin: 0;
+  padding-left: 160px;
   position: relative;
-  width: 50%;
+  width: 58%;
   height: 60px;
   background: $color-primario;
   li {
@@ -40,7 +42,7 @@ $espaciado: 20px;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 100%;
+    width: 58%;
     height: 60px;
     a {
       display: flex;
@@ -50,8 +52,8 @@ $espaciado: 20px;
       width: 100%;
       height: 60px;
       text-decoration: none;
-      color: #fbfbfb;
-      font-family: "Poppins", sans-serif;
+      color: $color-secundario;
+      font-family: $tipo-letra;
       font-style: normal;
       font-weight: 400;
       font-size: $tamano-t-nav;
@@ -81,13 +83,88 @@ $espaciado: 20px;
   line-height: 27px;
   white-space: nowrap;
 }
-.button a {
-  font-family: "Poppins", sans-serif;
+.nav .button a {
+  font-family: $tipo-letra;
   font-style: normal;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   white-space: nowrap;
-  color: #fbfbfb;
+  color: $color-secundario;
+}
+.hero__content {
+  position: relative;
+  width: 58%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-primario;
+}
+.fondo {
+  background-image: url("../img/smiling-creative-business-team.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  background-size: 50% 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+header section.hero__content {
+  width: 58%;
+  height: 100%;
+  padding-left: 160px;
+  padding-top: 80px;
+  padding-right: 88px;
+  padding-bottom: 81px;
+}
+
+h1.hero__title {
+  position: relative;
+  font-size: 24px;
+  color: $color-secundario;
+}
+p.hero__text {
+  position: relative;
+  font-family: $tipo-letra;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  text-transform: initial;
+  line-height: 80px;
+  white-space: wrap;
+  color: $color-secundario;
+  margin: 15px 0px 15px 0px;
+}
+p.hero__text2 {
+  font-size: 24px;
+  color: $color-secundario;
+  white-space: wrap;
+  max-width: 784px;
+  margin-bottom: 54px;
+}
+div.content__bottom {
+  width: 299px;
+  height: 88px;
+  background-color: $color-secundario;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a.buttom2 {
+  font-family: $tipo-letra;
+  text-decoration: none;
+  font-size: 24px;
+  font-style: normal;
+  color: $color-ter;
+  background-image: url("../img/Arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+  background-position: 190px center;
+  padding-right: 50px;
 }
